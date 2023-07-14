@@ -1,15 +1,12 @@
-# Blade Player
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/vhaudiquet/BladePlayer?style=flat-square)
-![license](https://img.shields.io/github/license/vhaudiquet/BladePlayer?style=flat-square)
-![GitHub last commit](https://img.shields.io/github/last-commit/vhaudiquet/BladePlayer?style=flat-square)
-![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/vhaudiquet/BladePlayer/latest?style=flat-square)
+# SomeGeetha music player
+
 
 <!-- Logo -->
 
-Blade is an open source music player for Android, allowing you to play music from multiple
+SomeGeetha is an open source music player for Android, allowing you to play music from multiple
 services : files on your phone, [Spotify], and more.
 
-Blade is available on [Google Play], or [here on GitHub].
+SomeGeetha is available on [Google Play], or [here on GitHub].
 It seems to also be on [IzzySoft F-Droid], and to stay up to date there.
 
 Other repos like ~~[Aptoide]~~ or even ~~[ApkPure]~~, ~~[ApkCombo]~~ are not recommended because
@@ -23,7 +20,7 @@ to stay up to date fast, and i can't check if they modified the `apk` before pub
 
 ## Feature overview
 
-Blade Player is developed by me ([@vhaudiquet]) alone, so the project cannot be tested on many
+SomeGeetha music Player is developed by me ([@vhaudiquet]) alone, so the project cannot be tested on many
 devices and scenarios ; if you find an issue, open one here.
 
 - The app will open on your library, categorized as Artists, Albums, Songs, and Playlists (available
@@ -32,7 +29,7 @@ devices and scenarios ; if you find an issue, open one here.
   add/remove from playlist, create/remove playlists)
 - It supports Android 'dark theme' (the screenshots above are done on a dark themed system).
 - It is completely free (there are no ads, no limited version)
-- It caches the library locally, so launching Blade requires virtually no data (only refreshing
+- It caches the library locally, so launching SomeGeetha requires virtually no data (only refreshing
   tokens and status of sources servers)
 - **(TODO)** It has a 'data saving' mode that allows you to listen to music while consuming very low
   mobile data (by not loading album arts)
@@ -59,21 +56,21 @@ devices and scenarios ; if you find an issue, open one here.
 
 ### About Spotify
 
-You will need a **Spotify Premium** account to play music from [Spotify], but you can use Blade
+You will need a **Spotify Premium** account to play music from [Spotify], but you can use SomeGeetha
 without a premium account (to play your Spotify playlists from other sources, for example)
 
 Blade is using the official [Spotify Android Auth] library and [Retrofit] to access
 the [Spotify Web API], i.e. to obtain user library and playlists. In order to play music from
-Spotify, Blade uses the [librespot-java] library.
+Spotify, SomeGeetha uses the [librespot-java] library.
 
-For now, Blade will act as a Spotify Connect peripheral. **Please do not try to control Blade with
+For now, SomeGeetha will act as a Spotify Connect peripheral. **Please do not try to control SomeGeetha with
 Spotify Connect**. It won't work, and it will glitch the app.
 
-When connecting Blade and Spotify, i am for now obligated to ask directly for your username and
+When connecting SomeGeetha and Spotify, i am for now obligated to ask directly for your username and
 password, 2 times : one for [librespot-java], which requires them directly (Spotify does not allow
 streaming music from their API authentification), and one for [Spotify Android Auth], which uses the
 secure OAuth2 protocol. I can only promise you that i am not stealing your credentials ; if you are
-paranoid, you may build Blade from sources or use a network analyzer to see that all network traffic
+paranoid, you may build SomeGeetha from sources or use a network analyzer to see that all network traffic
 goes to [Spotify] servers.
 
 Special thanks to the people at [librespot-org] and [librespot-java] ; without them, Spotify support
@@ -86,7 +83,7 @@ New features and bug fixes or improvements are coming. Here is a list of what i 
 - SPOTIFY: Use Android Native Decoders, and/or libtremolo if native decoder not present
 - UI: Show albums in an 'album view' instead of a list
 - Add new services : SoundCloud, YouTube Music, Amazon Music, Tidal, WebDAV/FTP Servers...
-- CORE: 'Blade' playlists, that can contain song from all sources
+- CORE: 'SomeGeetha' playlists, that can contain song from all sources
 
 ## Contributing
 
@@ -94,34 +91,3 @@ See [CONTRIBUTING.md]
 
 ## Older versions
 
-If you want older (i.e. < 2.0) versions of Blade, you can check the [old repository].
-
-[Google Play]:https://play.google.com/store/apps/details?id=v.blade
-
-[here on GitHub]:https://github.com/vhaudiquet/BladePlayer/releases
-
-[IzzySoft F-Droid]:https://apt.izzysoft.de/fdroid/index/apk/v.blade
-
-[Aptoide]:https://blade-blade.en.aptoide.com/app
-
-[ApkPure]:https://apkpure.com/blade-player/v.blade/
-
-[ApkCombo]:https://apkcombo.com/blade-player/v.blade/
-
-[Spotify]:https://www.spotify.com
-
-[old repository]:https://github.com/vhaudiquet/blade-player
-
-[Spotify Android Auth]:https://github.com/spotify/android-auth
-
-[Retrofit]:https://github.com/square/retrofit
-
-[Spotify Web API]:https://developer.spotify.com/documentation/web-api/
-
-[librespot-java]:https://github.com/librespot-org/librespot-java
-
-[librespot-org]:https://github.com/librespot-org
-
-[@vhaudiquet]:https://github.com/vhaudiquet
-
-[CONTRIBUTING.md]:CONTRIBUTING.md
