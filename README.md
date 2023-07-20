@@ -59,7 +59,7 @@ devices and scenarios ; if you find an issue, open one here.
 You will need a **Spotify Premium** account to play music from [Spotify], but you can use SomeGeetha
 without a premium account (to play your Spotify playlists from other sources, for example)
 
-Blade is using the official [Spotify Android Auth] library and [Retrofit] to access
+SomeGeetha is using the official [Spotify Android Auth] library and [Retrofit] to access
 the [Spotify Web API], i.e. to obtain user library and playlists. In order to play music from
 Spotify, SomeGeetha uses the [librespot-java] library.
 
